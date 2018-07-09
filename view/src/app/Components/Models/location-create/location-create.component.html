@@ -1,0 +1,157 @@
+<div class="Modal_Content">
+    <div class="Modal_Header">
+        <p>Create Location </p>
+        <span data-dismiss="modal" (click)="bsModalRef.hide()">&times;</span>
+    </div>
+    <div class="Model_Body">
+       <div class="row">
+         <div class="col-sm-6 Form_Input">
+            <input type="text" placeholder="Location Name">
+         </div>
+         <div class="col-sm-6"></div>
+         <div class="col-sm-6 Form_Input">
+            <input type="text" placeholder="Latitude">
+         </div>
+         <div class="col-sm-6 Form_Input">
+            <input type="text"  placeholder="longitude">
+         </div>
+       </div>
+        <div class="Image_Section">
+            <agm-map [latitude]="lat" [zoom]="16" [longitude]="lng">
+               <agm-marker [latitude]="lat" [longitude]="lng"[markerDraggable]="true"></agm-marker>
+            </agm-map>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 Form_TextArea">
+                <textarea class="message" rows="5" placeholder="Address..."></textarea>
+            </div>
+        </div>
+        <br>
+        <h5> Timing </h5>
+        <div class="Days">
+            <div class="Day">
+               <h6> Monday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Tuesday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Wednesday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Thursday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Friday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Saturday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+            <div class="Day">
+               <h6> Sunday </h6>
+               <div class="row">
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Opening Time" >
+                  </div>
+                  <div class="col-sm-4 PR-0 Form_Input">
+                        <input type="text" placeholder="Cutoff Time" >
+                  </div>
+                  <div class="col-sm-3 PR-0 Form_Input">
+                     <input type="text" placeholder="Delivery Hours" >
+                  </div>
+                  <div class="col-sm-1 PR-0 Append_Btn">
+                        <i class="material-icons">add_circle_outline</i>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="Model_Footer">
+        <span class="Submit_Btn" > Submit </span>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+
+<div class="Header">
+    <div class="HeaderLogo">
+      <img src="./../../../../assets/images/basic/Hasta.png" alt="Logo" class="header-logo">
+      <div class="logout">
+        <h5>
+          <a [routerLink]="['/Login']"> Logout </a>
+        </h5>
+       
+      </div>
+  
+    </div>
+    <div class="HeaderMenu">
+      <ul class="menus">
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Dashboard']">
+            <span class="pull-left"> &nbsp; Dashboard </span>
+          </a>
+        </li>
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Machines']">
+            <span class="pull-left"> &nbsp; Machines </span>
+          </a>
+        </li>
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Tickets']" >
+            <span class="pull-left"> &nbsp; Tickets </span>
+          </a>
+        </li>
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Activities']">
+            <span class="pull-left"> &nbsp; Activities </span>
+          </a>
+        </li>
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Invoices']">
+            <span class="pull-left"> &nbsp; Invoices </span>
+          </a>
+        </li>
+        <li class="menu-list" [routerLinkActive]="['active']">
+          <a [routerLink]="['/Profile']">
+            <span class="pull-left"> &nbsp; Profile </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>

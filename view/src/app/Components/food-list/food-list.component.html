@@ -1,0 +1,139 @@
+<!--The content below is only a placeholder and can be replaced.-->
+ <app-header></app-header>
+
+<div class="FoodListPage">
+  <div class="PageIdentity container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <p class="Identity">
+          <span class="link">Home</span> / Machines</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="Left_Section">
+          <ul class="List">
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_1' }" (click)="Active_Tab_Change('Category_1')"> <span> VMC </span>  </li>
+            <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_2' }" (click)="Active_Tab_Change('Category_2')"> <span> HMC </span>  </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="row" style="padding: 0px 29px;">
+            <div class="col-sm-6">
+              <!-- <button class=" Create_Btn" (click)="AddFoodItem()">Create New</button> -->
+            </div>
+            <div class="col-sm-6">
+                <div class="Search_Section">
+                  <input type="text" placeholder="Search..">
+                  <i class="material-icons">search</i>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="Right_Section">
+            <div class="row FoodList">
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/1.png" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/2.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/3.jpg" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/4.png" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/5.png" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 FoodItem">
+                <div class="Item_Info">
+                  <div class="Image_Section">
+                    <img src="assets/images/basic/6.png" alt="">
+                  </div>
+                  <div class="Text_Section">
+                    <h5 class="Food_Name"> Machine Name </h5>
+                    <p class="Food_Ingredients"> Model, Make, Id, Serial No </p>
+                    <!-- <h6 class="Price"> $20.00</h6>
+                    <div class="Action_Section">
+                      <span class="delete" (click)="DeleteFoodItem()"> <i class="material-icons delete">delete</i> Delete </span>
+                      <span class="edit" (click)="EditFoodItem()"> <i class="material-icons edit">edit</i> Edit </span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
